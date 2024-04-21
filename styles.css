@@ -1,0 +1,22 @@
+.card {
+    display: flex;
+  }
+  
+  .img {
+    width: 200px; /* Tamaño inicial */
+    margin: 10px;
+    transition: all 0.3s ease; /* Transición suave */
+  }
+  
+  .card .img:hover {
+    transform: scale(1.1, 1.1); /* Reducir tamaño al pasar el ratón */
+  }
+  
+  .card:hover > .img:not(:hover) {
+    filter: blur(10px); /* Reducir tamaño aún más si no está siendo activado */
+  }
+  
+  .img:focus {
+    width: 250px; /* Agrandar al recibir el foco (para accesibilidad) */
+  }
+  
